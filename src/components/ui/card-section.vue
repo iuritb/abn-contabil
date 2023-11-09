@@ -41,7 +41,7 @@ export default {
 
 <style lang="scss" scoped>
 .cards {
-  margin-top: 65px;
+  margin-top: 32px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

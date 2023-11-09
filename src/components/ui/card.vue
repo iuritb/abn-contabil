@@ -43,7 +43,6 @@ export default {
 <style lang="scss" scoped>
 .image-card-image-card {
   text-align: left;
-  font-family: Inter;
   justify-content: center;
   display: flex;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -80,16 +79,16 @@ export default {
   padding-right: 26px;
   padding-left: 26px;
   padding-bottom: 52px;
-  padding-top: 78px;
+  padding-top: 24pxpx;
   box-sizing: border-box;
-  height: 257px;
+  height: 260px;
   width: 352px;
 }
 
 .image-card-box_5101303951013038x {
   width: 100%;
   height: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   display: flex;
   gap: 8px;
@@ -97,9 +96,9 @@ export default {
 }
 
 .image-card-otimizao-fiscal {
+  color: #092C4C;
   width: 208px;
   height: 27px;
-  color: rgba(9, 44, 76, 1);
   line-height: 26.4px;
   font-weight: 700;
   font-size: 24px;
