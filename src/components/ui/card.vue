@@ -1,5 +1,5 @@
 <template>
-  <div class="${props.className} image-card-image-card" style="props.style">
+  <div class="image-card-image-card" style="props.style">
     <div class="image-card-shadow" />
     <div class="image-card-background">
       <div class="image-card-box_5101303951013038x">
@@ -9,7 +9,7 @@
         </p>
       </div>
     </div>
-    <div class="image-card-image" />
+    <img :src="loadAsset(image)" />
   </div>
 </template>
 
@@ -29,6 +29,12 @@ export default {
     image: {
       type: String,
       default: "none",
+    },
+  },
+
+  methods: {
+    loadAsset(path) {
+      return require(`../../assets/img/${path}`);
     },
   },
 };
