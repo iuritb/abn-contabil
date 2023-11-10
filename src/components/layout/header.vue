@@ -65,7 +65,6 @@ export default {};
     width: 607px;
     height: 231px;
     box-sizing: border-box;
-    font-family: Inter;
     color: #fff;
     text-align: left;
   }
