@@ -2,9 +2,13 @@
   <div class="navbar">
     <div class="navbar__text">
       <div class="navbar__text-item">Receita Federal</div>
+      <!-- https://www.gov.br/receitafederal/pt-br -->
       <div class="navbar__text-item">Meu INSS</div>
+      <!-- https://meu.inss.gov.br/#/login -->
       <div class="navbar__text-item">GDF</div>
+      <!-- https://www.df.gov.br/ -->
       <div class="navbar__text-item">JUCIS-DF</div>
+      <!-- https://jucis.df.gov.br/ -->
     </div>
   </div>
 </template>
