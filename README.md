@@ -17,3 +17,7 @@ yarn build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Live preview of the project
+https://abn-contabil.vercel.app/
