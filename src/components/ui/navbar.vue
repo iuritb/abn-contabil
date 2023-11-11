@@ -3,8 +3,8 @@
     <div class="navbar__text">
       <div class="navbar__text-item">Receita Federal</div>
       <div class="navbar__text-item">Meu INSS</div>
-      <div class="navbar__text-item">ISS Online</div>
-      <div class="navbar__text-item">ISS Net Online</div>
+      <div class="navbar__text-item">GDF</div>
+      <div class="navbar__text-item">JUCIS-DF</div>
     </div>
   </div>
 </template>
