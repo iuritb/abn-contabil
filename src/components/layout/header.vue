@@ -19,20 +19,21 @@
             </p>
           </div>
         </v-col>
-        <v-col>
-          <div class="header__navigation">
-            <p class="header__navigation-text">Sobre nós</p>
-            <p class="header__navigation-text">Nossos Serviços</p>
-            <p class="header__navigation-text">E-book</p>
-            <v-btn class="header__navigation-button" color="#D6C7B4"
-              >Fale conosco</v-btn
-            >
-          </div>
-          <!-- <div class="group">
-            <div class="group__background"></div>
-            <div class="group__front"></div>
-          </div> -->
-        </v-col>
+        <template v-if="$vuetify.breakpoint.mdAndUp">
+          <v-col>
+            <div class="header__navigation">
+              <p class="header__navigation-text"  @click.prevent="scrollMeTo(item.anchor) >Sobre nós</p>
+              <p class="header__navigation-text">Nossos Serviços</p>
+              <p class="header__navigation-text">E-book</p>
+              <v-btn class="header__navigation-button" color="#D6C7B4"
+                >Fale conosco</v-btn
+              >
+            </div>
+          </v-col>
+        </template>
+        <template v-if="$vuetify.breakpoint.smAndDown">
+          <side-bar class="header__sidebar" />
+        </template>
       </v-row>
     </v-container>
   </v-card>
@@ -40,7 +41,17 @@
 
 <script>
 // import batata from "../../assets/img/"
-export default {};
+import SideBar from "./sidebar.vue";
+export default {
+  components: {
+    SideBar,
+  },
+   methods: {
+    scrollMeTo(refName) {
+      this.$emit('scrollMeTo', refName);
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>

@@ -1,14 +1,27 @@
 <template>
   <div class="navbar">
     <div class="navbar__text">
-      <div class="navbar__text-item">Receita Federal</div>
-      <!-- https://www.gov.br/receitafederal/pt-br -->
-      <div class="navbar__text-item">Meu INSS</div>
-      <!-- https://meu.inss.gov.br/#/login -->
-      <div class="navbar__text-item">GDF</div>
-      <!-- https://www.df.gov.br/ -->
-      <div class="navbar__text-item">JUCIS-DF</div>
-      <!-- https://jucis.df.gov.br/ -->
+      <a
+        href="https://www.gov.br/receitafederal/pt-br "
+        target="_blank"
+        class="navbar__text-item"
+        >Receita Federal</a
+      >
+      <a
+        href="https://meu.inss.gov.br/#/login"
+        target="_blank"
+        class="navbar__text-item"
+        >Meu INSS</a
+      >
+      <a href="https://www.df.gov.br/" target="_blank" class="navbar__text-item"
+        >GDF</a
+      >
+      <a
+        href=" https://jucis.df.gov.br/"
+        target="_blank"
+        class="navbar__text-item"
+        >JUCIS-DF</a
+      >
     </div>
   </div>
 </template>
@@ -39,6 +52,8 @@ p {
     font-style: normal;
     font-weight: 700;
     line-height: 25.2px; /* 140% */
+    text-decoration: none;
+
   }
 }
 </style>
