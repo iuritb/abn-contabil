@@ -62,7 +62,7 @@ export default {
   z-index: 100;
   top: 0;
   right: -100%;
-  background: rgba(31, 51, 75, 1);
+  background: rgba(31, 51, 75);
   height: 100%;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease-in-out;
